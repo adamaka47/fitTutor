@@ -1,0 +1,165 @@
+@import 'fonts'
+@import 'features'
+@import 'about'
+@import 'form'
+@import 'footer'
+
+body
+	margin: 0
+	font-size: 20px
+	font-family: 'AvenirR', sans-serif;
+
+img
+	max-width: 100%
+	height: auto
+
+.btn
+	text-transform: uppercase
+	font-size: 20px
+	color: #fff
+	padding: 30px 58px
+	background-color: #23dcb8
+	border: none
+	border-radius: 50px
+	text-shadow: 0 2px 20px rgba(230,250,255, 0.46)
+	background-image: linear-gradient(-241deg, #48d7bb 0%, #0eb595 100%)
+	cursor: pointer
+	box-shadow: 0 2px 9px #23dcb8
+	display: block
+	transition: box-shadow 0.5s
+	&:hover
+		box-shadow: 0 7px 23px #23dcb8
+		text-shadow: 0 2px 20px rgba(230,250,255,  1)
+button:focus, input:focus
+	outline: none
+.header
+	background: #192433 url('../img/header_main.jpg') center bottom no-repeat
+	background-size: cover
+	color: #fff
+	padding-top: 30px
+	padding-bottom: 250px
+	&_top
+		padding-bottom: 180px
+	&_logo
+		display: flex
+		align-items: center
+		a
+			display: inline-block
+			color: #fff
+			text-decoration: none
+			padding-right: 30px
+			font-size: 26px
+	&_info
+		padding-left: 30px
+		border-left: 1px solid rgba(#fff, 0.2)
+		font-size: 16px
+	&_list
+		margin: 0
+		padding: 0
+		list-style-type: none
+		display: flex
+		align-items: center
+		li
+			margin-right: 16px
+			&:last-child
+				margin-right: 0
+			a
+
+	&_flex
+		display: flex
+		justify-content: space-around
+		a
+			color: #fff
+			text-decoration: none
+	&_social
+		padding: 0
+		width: 25px
+		height: 25px
+		display: inline-block
+		color: #fff
+		transition: color 0.4s
+		&:hover
+			color: #23dcb8
+	&_title
+		text-transform: uppercase
+		max-width: 640px
+		margin: 0
+		line-height: 110px
+		letter-spacing: 7px
+		font-family: 'Bebas', fantasy
+		font-size: 100px
+		margin-bottom: 30px
+	&_subtitle
+		font-size: 27px
+		margin-bottom: 80px
+
+
+@media (max-width: 1199.98px)
+	.header
+		background: #192433 url('../img/header_main.jpg') right 42% bottom no-repeat
+		&_top
+			padding-bottom: 120px
+
+@media (max-width: 991.98px)
+	.header
+		&_logo
+			justify-content: center
+			margin-bottom: 25px
+		&_top
+			padding-bottom: 60px
+		&_flex
+			justify-content: center
+			flex-direction: column-reverse
+			align-items: center
+		&_phone
+			margin-top: 15px
+		&_main
+			h1
+				font-size: 64px
+				line-height: 80px
+		&_subtitle
+			font-size: 24px
+			margin-bottom: 50px
+
+@media (max-width: 767.98px)
+	.header
+		background: #192433 url('../img/header_main.jpg') left no-repeat
+		text-align: center
+		padding-bottom: 100px
+		&_main
+			h1
+				font-size: 48px
+		&_btn
+			margin: 0 auto
+
+@media (max-width: 575.98px)
+	.header
+		&_btn
+			padding: 20px 28px
+		&_main h1
+			font-size: 36px
+			line-height: 50px
+			margin: 0
+		&_subtitle
+			font-size: 18px
+			margin-bottom: 40px
+			margin-top: 0
+			margin-top: 15px
+
+@media (max-width: 445px)
+	.header
+		&_logo
+			a
+				font-size: 16px
+				padding-right: 15px
+		&_info
+			font-size: 14px
+			padding-left: 10px
+		&_btn
+			padding: 15px 25px
+			font-size: 14px
+
+
+
+
+

@@ -1,0 +1,59 @@
+.features
+	padding: 80px 0
+	padding-bottom: 120px
+	position: relative
+	text-align: center
+	z-index: 2
+	&_muscle
+		position: absolute
+		top: -200px
+		left: -180px
+		z-index: -1
+	&_title
+		margin-bottom: 70px
+		font-family: 'Bebas', fantasy
+		font-size: 48px
+		letter-spacing: 3.6px
+		text-align: center
+	&_items
+		display: flex
+		flex-wrap: wrap
+	&_item
+		flex-basis: 22%
+		margin: 40px auto
+		h5
+			font-size: 20px
+			font-family: 'AvenirM', sans-serif
+			margin: 0
+			margin-top: 30px
+		img
+			max-height: 90px
+			max-width: 96px
+
+
+@media (max-width: 991.98px)
+	.features
+		padding-bottom: 40px
+		&_item
+			flex-basis: 50%
+			&_title
+				padding: 0 30px
+		&_title
+			font-size: 36px
+			margin-bottom: 40px
+		&_muscle
+			left: -300px
+			top: 0
+@media (max-width: 575.98px)
+	.features
+		&_item
+			flex-basis: 100%
+			margin: 40px auto
+			&_title
+				font-size: 16px
+		&_title
+			font-size: 32px
+
+@media (max-width: 445px)
+	.features_muscle
+		left: -250px
